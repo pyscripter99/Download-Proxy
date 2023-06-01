@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Proxy</title>
-</head>
-<body>
-    <div style="position: absolute; left: 40%; top: 40%;">
-        <h1>Download Proxy</h1>
-        <br>
-    <form action="/download/"><input type="url" name="url" id="url" placeholder="Url to download" autofocus autocomplete="off"><button>Download</button>
-    </form>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Download Proxy</title>
+    </head>
+    <body>
+        <div
+            style="
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            "
+        >
+            <h1>Download Proxy</h1>
+            <form action="/download/">
+                <input
+                    type="url"
+                    name="url"
+                    id="url"
+                    placeholder="Url to download"
+                    autofocus
+                    autocomplete="off"
+                    required
+                /><button>Download</button>
+            </form>
+        </div>
         <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
             input {
                 outline: none;
                 border: 1px gray;
@@ -30,12 +47,24 @@
             button {
                 outline: none;
                 border: 1px gray;
-                margin: 5px;
-                padding: 10px;
-                background-color: #34eb3d;
+                margin: 0;
+                padding: 15px;
+                background-color: #26c55b;
                 color: white;
-                border-radius: 5px;
+                border-radius: 0 5px 5px 0;
+                transition: all 200ms;
+            }
+
+            button:hover {
+                background-color: #21a14c;
+                transition: all 200ms;
+            }
+
+            h1 {
+                color: rgb(30, 30, 30);
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
             }
         </style>
-</body>
+    </body>
 </html>
